@@ -399,7 +399,7 @@
 				INFOPLIST_FILE = KGHighLightedButton/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.BluemixIndia.KGHighLightedButton;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myworld.KGHighLightedButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -420,7 +420,7 @@
 				INFOPLIST_FILE = KGHighLightedButton/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.BluemixIndia.KGHighLightedButton;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myworld.KGHighLightedButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -435,7 +435,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = demoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.BluemixIndia.demoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myworld.demoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -449,7 +449,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = demoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.BluemixIndia.demoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myworld.demoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -474,6 +474,7 @@
 				14202E901DD0051900787CE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14202EA41DD0052900787CE2 /* Build configuration list for PBXNativeTarget "demoApp" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +483,7 @@
 				14202EA61DD0052900787CE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
