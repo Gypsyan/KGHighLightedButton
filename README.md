@@ -2,7 +2,7 @@
 
 
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Cocoapods Compatible](https://img.shields.io/badge/KGRippleAnimation-Swift3.0-green.svg)](https://img.shields.io/badge/KGRippleAnimation-Swift3.0-green.svg)
+[![Cocoapods Compatible](https://img.shields.io/badge/KGHighLightedButton-Swift3-brightgreen.svg)](https://img.shields.io/badge/KGHighLightedButton-Swift3-brightgreen.svg)
 
 `KGHighLightedButton` is a highlighted custom UIButton.
 
