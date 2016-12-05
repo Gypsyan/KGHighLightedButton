@@ -20,23 +20,23 @@ open class KGHighLightedButton: UIButton {
         public static var depth: Double = 3
         public static var cornerRadius: CGFloat = 5
     }
-    
+
     public struct ColorSet {
         let button: UIColor
         let shadow: UIColor
-        
+
         public init(button: UIColor, shadow: UIColor) {
             self.button = button
             self.shadow = shadow
         }
     }
-    
+
     public var colors: ColorSet = Defaults.colors {
         didSet {
             setImages()
         }
     }
-    
+
     @IBInspectable
     public var foreGroundColor:UIColor = Defaults.colors.button {
         didSet{
@@ -49,13 +49,13 @@ open class KGHighLightedButton: UIButton {
             setColor()
         }
     }
-    
+
     fileprivate func setColor(){
-        
+
         self.colors = .init(button: foreGroundColor, shadow: shadowsColor)
-        
+
     }
-    
+
     @IBInspectable
     public var shadowHeight: CGFloat = Defaults.shadowHeight {
         didSet {
@@ -63,7 +63,7 @@ open class KGHighLightedButton: UIButton {
             updateTitleInsets()
         }
     }
-    
+
     @IBInspectable
     public var depth: Double = Defaults.depth {
         didSet {
@@ -71,7 +71,7 @@ open class KGHighLightedButton: UIButton {
             updateTitleInsets()
         }
     }
-    
+
     @IBInspectable
     public var cornerRadius: CGFloat = Defaults.cornerRadius {
         didSet {
@@ -84,38 +84,37 @@ open class KGHighLightedButton: UIButton {
         adjustsImageWhenHighlighted = false
     }
     // MARK: - UIButton
-    
+
     public override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
         setImages()
     }
-    
+
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         configure()
         setImages()
     }
-    
+
     override open var isHighlighted: Bool {
         didSet {
             updateTitleInsets()
         }
     }
-    
+
     func updateTitleInsets() {
         let topPadding = isHighlighted ? shadowHeight * CGFloat(depth) : 0
         let bottomPadding = isHighlighted ? shadowHeight * (1 - CGFloat(depth)) : shadowHeight
         titleEdgeInsets = UIEdgeInsets(top: topPadding, left: 0, bottom: bottomPadding, right: 0)
     }
-    
+
     fileprivate func setImages() {
-        
+
         let normalImage = KGEnum.normalImage(color: colors.button, shadowHeight: shadowHeight, shadowColor: colors.shadow, cornerRadius: cornerRadius, buttonPressDepth: 0)
         let highlightedImage = KGEnum.normalImage(color: colors.button, shadowHeight: shadowHeight, shadowColor: colors.shadow, cornerRadius: cornerRadius, buttonPressDepth: shadowHeight * CGFloat(depth))
-        
+
         setBackgroundImage(normalImage, for: .normal)
         setBackgroundImage(highlightedImage, for: .highlighted)
     }
-
 }
