@@ -39,7 +39,7 @@ $ brew install carthage
 
 Add `KGHighLightedButton` in your `Cartfile`.
 
-```ruby
+```
 github "Gypsyan/KGHighLightedButton"
 ```
 
