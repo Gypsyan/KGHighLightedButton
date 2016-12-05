@@ -25,7 +25,7 @@ pod 'KGHighLightedButton'
 
 Then, run the following command.
 
-```bash
+```
 $ pod install
 ```
 ## Carthage
