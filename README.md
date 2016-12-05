@@ -17,7 +17,7 @@ $ gem install cocoapods
 
 Add `KGHighLightedButton` in your `Podfile`.
 
-```ruby
+```
 use_frameworks!
 
 pod 'KGHighLightedButton'
